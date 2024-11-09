@@ -3,9 +3,9 @@ package com.example.demo.person;
 import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
-import lombok.Getter;
+import lombok.Data;
 
-@Getter
+@Data
 @Entity
 public class Person {
     @EmbeddedId

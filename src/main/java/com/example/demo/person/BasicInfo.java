@@ -1,14 +1,13 @@
 package com.example.demo.person;
 
 import jakarta.persistence.Embeddable;
-import lombok.Getter;
+import lombok.Data;
 import java.io.Serializable;
 
 @Embeddable
+@Data
 public class BasicInfo implements Serializable {
-    @Getter
     private String name;
-    @Getter
     private String surname;
     private int age;
 }
